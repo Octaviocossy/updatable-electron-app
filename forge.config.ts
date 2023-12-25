@@ -8,15 +8,11 @@ import { VitePlugin } from "@electron-forge/plugin-vite";
 const config: ForgeConfig = {
   packagerConfig: {
     // icon: path.join(__dirname, "src", "assets", "icon"),
-    asar: true,
   },
-  rebuildConfig: {
-    force: true,
-    useCache: true
-  },
+  rebuildConfig: {},
   makers: [
     new MakerSquirrel({
-      name: "Updatable App",
+      name: "MyUpdatableApp",
       authors: "Octavio Cossy Torquati",
       description: "This is my incredible updatable app!",
       exe: "updatable_app.exe",
