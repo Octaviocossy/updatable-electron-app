@@ -1,14 +1,14 @@
 import { app, BrowserWindow } from "electron";
-import { updateElectronApp, UpdateSourceType } from "update-electron-app";
+// import { updateElectronApp, UpdateSourceType } from "update-electron-app";
 import path from "path";
 
-updateElectronApp({
-  updateSource: {
-    type: UpdateSourceType.ElectronPublicUpdateService,
-    repo: 'https://github.com/Octaviocossy/updatable-electron-app'
-  },
-  updateInterval: '1 hour',
-})
+// updateElectronApp({
+//   updateSource: {
+//     type: UpdateSourceType.ElectronPublicUpdateService,
+//     repo: 'https://github.com/Octaviocossy/updatable-electron-app'
+//   },
+//   updateInterval: '1 hour',
+// })
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) {

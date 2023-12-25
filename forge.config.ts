@@ -15,7 +15,6 @@ const config: ForgeConfig = {
       name: "MyUpdatableApp",
       authors: "Octavio Cossy Torquati",
       description: "This is my incredible updatable app!",
-      exe: "updatable_app.exe",
     }),
     new MakerZIP({}, ["darwin"]),
     new MakerRpm({}),

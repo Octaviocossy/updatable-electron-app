@@ -1,9 +1,11 @@
 {
   "name": "updatable-electron-app",
-  "productName": "updatable-electron-app",
+  "productName": "Updatable Electron App",
   "version": "1.0.0",
   "description": "This is my updatable Electron application",
   "main": ".vite/build/main.js",
+  "author": "Octavio Cossy Torquati",
+  "license": "MIT",
   "scripts": {
     "dev": "electron-forge start",
     "package": "electron-forge package",
@@ -12,10 +14,6 @@
     "lint": "eslint --ext .ts,.tsx ."
   },
   "keywords": [],
-  "author": {
-    "name": "Octavio Cossy Torquati"
-  },
-  "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^7.2.0",
     "@electron-forge/maker-rpm": "^7.2.0",
