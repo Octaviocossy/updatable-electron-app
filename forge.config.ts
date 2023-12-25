@@ -8,6 +8,7 @@ import { VitePlugin } from "@electron-forge/plugin-vite";
 const config: ForgeConfig = {
   packagerConfig: {
     // icon: path.join(__dirname, "src", "assets", "icon"),
+    executableName: "updatable-electron-app",
   },
   rebuildConfig: {},
   makers: [

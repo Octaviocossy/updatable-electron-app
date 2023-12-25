@@ -1,6 +1,6 @@
 {
   "name": "updatable-electron-app",
-  "productName": "UpdatableElectronApp",
+  "productName": "Updatable Electron App",
   "version": "1.0.0",
   "description": "This is my updatable Electron application",
   "main": ".vite/build/main.js",
