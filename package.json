@@ -6,6 +6,7 @@
   "main": ".vite/build/main.js",
   "author": "Octavio Cossy Torquati",
   "license": "MIT",
+  "repository": "https://github.com/Octaviocossy/updatable-electron-app",
   "scripts": {
     "dev": "electron-forge start",
     "package": "electron-forge package",

@@ -1,14 +1,6 @@
 import { app, BrowserWindow } from "electron";
-// import { updateElectronApp, UpdateSourceType } from "update-electron-app";
+import { updateElectronApp } from "update-electron-app";
 import path from "path";
-
-// updateElectronApp({
-//   updateSource: {
-//     type: UpdateSourceType.ElectronPublicUpdateService,
-//     repo: 'https://github.com/Octaviocossy/updatable-electron-app'
-//   },
-//   updateInterval: '1 hour',
-// })
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) {
@@ -41,7 +33,14 @@ const createWindow = () => {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on("ready", createWindow);
+app.on("ready", () => {
+  updateElectronApp({
+    updateInterval: "1 hour",
+    notifyUser: true,
+  });
+
+  createWindow();
+});
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
