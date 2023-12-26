@@ -1,7 +1,7 @@
 {
   "name": "updatable-electron-app",
   "productName": "Updatable Electron App",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is my updatable Electron application",
   "main": ".vite/build/main.js",
   "author": "Octavio Cossy Torquati",
