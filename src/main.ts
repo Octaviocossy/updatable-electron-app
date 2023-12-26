@@ -35,7 +35,6 @@ const createWindow = () => {
 // Some APIs can only be used after this event occurs.
 app.on("ready", () => {
   updateElectronApp({
-    updateInterval: "1 hour",
     notifyUser: true,
   });
 
