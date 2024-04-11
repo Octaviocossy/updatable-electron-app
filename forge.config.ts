@@ -3,11 +3,9 @@ import { MakerSquirrel } from "@electron-forge/maker-squirrel";
 import { MakerZIP } from "@electron-forge/maker-zip";
 import { MakerRpm } from "@electron-forge/maker-rpm";
 import { VitePlugin } from "@electron-forge/plugin-vite";
-// import path from "path";
 
 const config: ForgeConfig = {
   packagerConfig: {
-    // icon: path.join(__dirname, "src", "assets", "icon"),
     executableName: "updatable-electron-app",
   },
   rebuildConfig: {},
