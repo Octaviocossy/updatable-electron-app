@@ -36,6 +36,7 @@ const createWindow = () => {
 app.on("ready", () => {
   updateElectronApp({
     notifyUser: true,
+    logger: require("electron-log"),
   });
 
   createWindow();
